@@ -12,7 +12,8 @@ I test concurrency and correctness in graph databases and agent-memory layers. I
 | Omnigraph | Wrong refusal type when a conditional write loses a race: [issue #1424](https://github.com/ModernRelay/omnigraph/issues/1424) | Fixed by the maintainers in [#1426](https://github.com/ModernRelay/omnigraph/pull/1426) |
 | Graphiti | FalkorDB lost writes on kill under the default Compose setup: measured in [#2117](https://github.com/getzep/graphiti/issues/2117) | Fix [PR #2118](https://github.com/getzep/graphiti/pull/2118) open, cites the measurement |
 | FalkorDB | Filters pushed past `LIMIT`/`SKIP` in a `WITH` clause: [issue #3694](https://github.com/FalkorDB/FalkorDB/issues/3694) | My fix [PR #3699](https://github.com/FalkorDB/FalkorDB/pull/3699) open |
-| FalkorDB | Fulltext queries answer from an index still under construction: [issue #3931](https://github.com/FalkorDB/FalkorDB/issues/3931) | Open |
+| FalkorDB | Fulltext queries answer from an index still under construction: [issue #3931](https://github.com/FalkorDB/FalkorDB/issues/3931) | My fix [PR #3992](https://github.com/FalkorDB/FalkorDB/pull/3992) open |
+| HydraDB | A guarded `MATCH … WHERE … SET` in 0.3.0 let up to 35 of 50 concurrent claims win and lost concurrent SETs: [write-up and repro](https://github.com/suryaprasanthcse/hydradb-guarded-write-race) | Reported privately; fixed in 0.4.0 |
 
 #### Projects
 
